@@ -121,9 +121,12 @@ fi
 
 # Rust
 alias car='cargo run'
+alias carb='cargo run --bin'
+alias carex='cargo run --example'
 alias cc='cargo clippy'
 alias ct='cargo test -- --nocapture'
 alias cdo='cargo doc --open --document-private-items'
+alias cm='cargo make'
 
 # bash
 alias cl='clear'
@@ -132,8 +135,9 @@ alias h='history'
 # git
 alias grb='git rebase'
 alias gl='git log --oneline'
+alias gd='git diff'
 alias gdn='git diff --name-only'
-alias gc='git add . && git commit -m '
+alias gc='git add . && git commit -m'
 
 # Dummy
 export OPENAI_API_KEY='API_KEY'
