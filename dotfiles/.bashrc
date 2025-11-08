@@ -16,8 +16,11 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+# HISTSIZE=1000
+# HISTFILESIZE=2000
+HISTSIZE=100000
+HISTFILESIZE=10000
+export HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -121,6 +124,7 @@ fi
 
 # Rust
 alias car='cargo run'
+alias carr='cargo run --release'
 alias carb='cargo run --bin'
 alias carex='cargo run --example'
 alias cc='cargo clippy'
@@ -130,7 +134,10 @@ alias cm='cargo make'
 
 # bash
 alias cl='clear'
+## history
 alias h='history'
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
 
 # git
 alias grb='git rebase'
@@ -138,6 +145,11 @@ alias gl='git log --oneline'
 alias gd='git diff'
 alias gdn='git diff --name-only'
 alias gc='git add . && git commit -m'
+
+#vim
+export PATH="$PATH:/opt/nvim/"
+alias nv='nvim'
+alias nvd='neovide'
 
 # Dummy
 export OPENAI_API_KEY='API_KEY'
