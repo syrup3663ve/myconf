@@ -1,0 +1,2 @@
+dotfiles/.config/blender/**/**/*
+!dotfiles/.config/blender/**/config/userpref.blend

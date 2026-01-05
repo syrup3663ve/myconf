@@ -30,7 +30,7 @@ if vim.g.neovide then
 
   -- # Transparency
   -- vim.g.neovide_opacity = 0.8
-  vim.g.neovide_normal_opacity = 0.95
+  vim.g.neovide_normal_opacity = 0.75
 
   -- # Position Animation Length
   -- vim.g.neovide_position_animation_length = 0.15
