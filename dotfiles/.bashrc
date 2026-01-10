@@ -120,7 +120,7 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-. "$HOME/.local/bin/env"
+#. "$HOME/.local/bin/env"
 
 # Rust
 alias car='cargo run'
@@ -156,5 +156,3 @@ export OPENAI_API_KEY='API_KEY'
 
 # opencode
 export PATH=/home/syrup/.opencode/bin:$PATH
-
-source '/home/syrup/.bash_completions/comfy.sh'
